@@ -12,19 +12,45 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="sky-bg" translatesAutoresizingMaskIntoConstraints="NO" id="MWh-mI-XLW">
+                                <rect key="frame" x="-343.66666666666669" y="-534" width="1080.3333333333333" height="1920"/>
+                            </imageView>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="cQk-B9-Dfa">
                                 <rect key="frame" x="16" y="430" width="361" height="388"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cO7-5Z-puJ">
+                                        <rect key="frame" x="155.66666666666666" y="167" width="50" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="linkColor"/>
                                 <color key="tintColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstItem="cO7-5Z-puJ" firstAttribute="centerY" secondItem="cQk-B9-Dfa" secondAttribute="centerY" id="EeX-sD-2m5"/>
+                                    <constraint firstItem="cO7-5Z-puJ" firstAttribute="centerX" secondItem="cQk-B9-Dfa" secondAttribute="centerX" id="nXo-CJ-tyn"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="axP-oy-IIu">
                                 <rect key="frame" x="16" y="59" width="361" height="347"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🥶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfN-1X-VAR">
+                                        <rect key="frame" x="155.66666666666666" y="146.66666666666666" width="50" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <color key="tintColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstItem="YfN-1X-VAR" firstAttribute="centerX" secondItem="axP-oy-IIu" secondAttribute="centerX" id="kRK-DX-epV"/>
+                                    <constraint firstItem="YfN-1X-VAR" firstAttribute="centerY" secondItem="axP-oy-IIu" secondAttribute="centerY" id="vU8-uP-abY"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,7 +59,9 @@
                             <constraint firstItem="cQk-B9-Dfa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2oL-WG-zjZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="axP-oy-IIu" secondAttribute="trailing" constant="16" id="Hr1-Ru-GPc"/>
                             <constraint firstItem="cQk-B9-Dfa" firstAttribute="top" secondItem="axP-oy-IIu" secondAttribute="bottom" constant="24" id="Ld3-vf-Wef"/>
+                            <constraint firstItem="MWh-mI-XLW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P5d-oO-I4C"/>
                             <constraint firstItem="axP-oy-IIu" firstAttribute="width" secondItem="cQk-B9-Dfa" secondAttribute="width" id="fQY-Op-93D"/>
+                            <constraint firstItem="MWh-mI-XLW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fzR-XK-b2t"/>
                             <constraint firstItem="cQk-B9-Dfa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oXW-q9-EL0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cQk-B9-Dfa" secondAttribute="trailing" constant="16" id="smO-ud-fwP"/>
                             <constraint firstItem="axP-oy-IIu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tOW-S1-ZOF"/>
@@ -44,10 +72,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62.676056338028175" y="0.76335877862595414"/>
+            <point key="canvasLocation" x="61.832061068702288" y="0.70422535211267612"/>
         </scene>
     </scenes>
     <resources>
+        <image name="sky-bg" width="1080" height="1920"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
