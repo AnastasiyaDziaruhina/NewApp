@@ -19,15 +19,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FIW-Ez-4QP">
                                 <rect key="frame" x="113" y="100" width="167" height="562"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-8I-cGd" userLabel="Red View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nx1-8I-cGd" userLabel="Red">
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="180.66666666666666"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                     </view>
-                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JW-XJ-Jcj" userLabel="Yellow View">
+                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JW-XJ-Jcj" userLabel="Yellow">
                                         <rect key="frame" x="0.0" y="190.66666666666669" width="167" height="180.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
-                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE3-kg-huz" userLabel="Green View">
+                                    <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nE3-kg-huz" userLabel="Green">
                                         <rect key="frame" x="0.0" y="381.33333333333331" width="167" height="180.66666666666669"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
@@ -46,7 +46,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VpR-m3-alh"/>
+                                    <action selector="startBtnPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="dfO-R9-BUB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,6 +65,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonLabel" destination="oUQ-zB-RqB" id="bz3-3s-eK5"/>
                         <outlet property="greenLight" destination="nE3-kg-huz" id="WB7-Bm-wZh"/>
                         <outlet property="redLight" destination="nx1-8I-cGd" id="bQ5-aZ-QJ6"/>
                         <outlet property="yellowLight" destination="5JW-XJ-Jcj" id="YZc-Ip-22o"/>
